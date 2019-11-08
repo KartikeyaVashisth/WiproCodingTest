@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="WiproTest(failed)">
+    <classes>
+      <class name="com.wipro.test.TestCases">
+        <methods>
+          <include name="setUp"/>
+          <include name="beforeMethod"/>
+          <include name="AfterMethod"/>
+          <include name="searchItemAndAddToCartAndValidate"/>
+          <include name="initialiseReport"/>
+          <include name="change_Country_To_Australiya"/>
+          <include name="startServer"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.wipro.test.TestCases -->
+    </classes>
+  </test> <!-- WiproTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

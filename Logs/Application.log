@@ -1,0 +1,3 @@
+2019-10-17 15:30:42,547  INFO [main] - com.wipro.test.TestCases.beforeTest 74 - Initialised Locators and Log4J successfully
+2019-10-17 15:30:52,763  INFO [main] - com.wipro.test.TestCases.change_Country_To_Australiya 140 - Country Changed to Australiya Successfully
+2019-10-17 15:30:52,794  INFO [main] - com.wipro.test.TestCases.beforeMethod 87 - Running Test case issearchItemAndAddToCartAndValidate
