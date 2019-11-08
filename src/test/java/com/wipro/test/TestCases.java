@@ -2,43 +2,28 @@ package com.wipro.test;
 
 import java.io.File;
 import java.io.IOException;
-import java.lang.reflect.Array;
+
 import java.lang.reflect.Method;
-import java.time.Duration;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import org.w3c.dom.ls.LSException;
 
-import com.google.common.collect.ImmutableMap;
-import com.google.errorprone.annotations.Immutable;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.LogStatus;
-import com.wipro.utils.BaseClass;
 import com.wipro.utils.Locators;
 import com.wipro.utils.TestUtils;
 
-import io.appium.java_client.MobileBy;
-import io.appium.java_client.android.nativekey.AndroidKey;
-import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 public class TestCases extends TestUtils {

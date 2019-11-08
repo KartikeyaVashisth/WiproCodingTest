@@ -15,9 +15,7 @@ import io.appium.java_client.touch.offset.PointOption;
 
 public class TestUtils extends BaseClass {
 
-	
 	public 	ArrayList<String> price_description;
-
 
 	public void click(AndroidElement e) {
 		e.click();
@@ -28,7 +26,6 @@ public class TestUtils extends BaseClass {
 	}
 
 	public void scrollToElementAndClick(String searchtext) {
-
 		String scrollable = "new UiScrollable(new UiSelector().scrollable(true))";
 		String textElement = ".scrollIntoView(new UiSelector().text(\""+ searchtext +"\"))";
 		driver.findElementByAndroidUIAutomator(scrollable+textElement).click();
@@ -41,7 +38,7 @@ public class TestUtils extends BaseClass {
 		int starty=(int)(size.getHeight()*0.60);
 		int endy=(int)(size.getHeight()*0.30);
 
-		TouchAction t=new TouchAction(driver);
+		TouchAction t = new TouchAction(driver);
 		t.press(PointOption.point(x,starty)).waitAction(WaitOptions.waitOptions(Duration.ofSeconds(2))).
 		moveTo(PointOption.point(x,endy));
 		t.release().perform();
@@ -50,13 +47,12 @@ public class TestUtils extends BaseClass {
 
 	public void tap(int startx,int starty) {
 
-		TouchAction t=new TouchAction(driver);
+		TouchAction t = new TouchAction(driver);
 		t.tap(PointOption.point(startx,starty));
 		t.perform();
 	}
 
 	public void quit(){
-
 		if(driver!=null) {
 			driver.quit();
 		}
@@ -80,8 +76,6 @@ public class TestUtils extends BaseClass {
 	
 	public void getDescription_Price_Of_TV()
 	{
-		
-		
 		try {
 			String description=Locators.itemTextDescription.getText();
 			String price=Locators.itemPrice.getText();
